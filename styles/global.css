@@ -1,0 +1,101 @@
+
+/* Variables */
+:root {
+    /* Color Variables */
+--primary-color: #222935;
+--secondary-color: #26C17E;
+--text-color: #667081;
+--dark-color: #000001;
+--dark-grey: #000614;
+--light-grey: #DDDDDD;
+--white: #ffffff;
+--background-color: #EEEEEE;
+
+/* Font Variables */
+--font: 'Open Sans', sans-serif;
+--font-size-small: 14px;
+--font-size-medium: 18px;
+--font-size-h2: 25px;
+--font-size-h1: 45px;
+--font-size-button: 16px;
+--font-weight-bold: 700;
+--font-weight-semibold: 600;
+--font-weight-regular: 500;
+
+/* other Variables */
+--small-br: 5px;
+--big-br: 8px;
+--transition: all 0.3s ease-in-out;
+}
+
+
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+
+/* Home page Styles */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('/assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 530px;
+    text-align: center;
+}
+.content h1, .content h2, .content p {
+    text-align: center;
+}
+.content h1 {
+    color: var(--text-color);
+    font-size: var(--font-size-h1);
+}
+.content h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-semibold);
+    background-color: var(--text-color);
+    border-radius: var(--small-br);
+    padding: 5px;
+    
+}
+.content p {
+    font-size: var(--font-size-small);
+    color: var(--light-grey);
+
+}
+.content button {
+    background-color: var(--primary-color);
+    width: 130px;
+    height: 50px;
+    border-radius: var(--small-br);
+    border: none;
+    color: var(--text-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+.content button:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-grey);
+    transition: var(--transition);
+}
+
+

@@ -1,0 +1,86 @@
+
+/* Edit Section Styles */
+
+.edit-skills-page {
+  padding: 49px 70px;;
+}
+.section-icon-edit {
+    display: flex;
+    justify-content: space-between;
+}
+.edit-skills-page h2 {
+    color: var(--secondary-color);
+}
+.cancel-btn, .delete-btn {
+  background: var(--primary-color);
+  color: var(--text-color);
+  width: 90px;
+  height: 40px;
+  border: none;
+  border-radius: var(--small-br);
+  cursor: pointer;
+  font-size: var(--font-size-button);
+}
+.add-skill-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--big-br);
+  padding: 20px;
+  
+}
+.skills-name, .skills-range {
+    display:flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.add-skill-form input {
+  padding-left: 5px;
+  width: 270px;
+  height: 40px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--small-br);
+}
+.add-btn {
+  background: var(--primary-color);
+  color: var(--text-color);
+  width: 103px;
+  height: 40px;
+  border: none;
+  border-radius: var(--small-br);
+  cursor: pointer;
+  font-size: var(--font-size-button);
+}
+.skills-list {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.skill-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.bar {
+  height: 30px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bar-fill {
+  background-color: var(--secondary-color);
+  height: 100%;
+  color:var(--white);
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  align-items: center;
+}
+.bar-label {
+  z-index: 1;
+  margin-bottom: 8px;
+}
+
