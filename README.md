@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+CV Project – Personal Portfolio
 
-## Getting Started
+This is a personal CV website built using Next.js, showcasing professional information like education, work experience, and skills. The project includes an editable skills section with persistent local storage.
 
-First, run the development server:
+Overview:
+The project is structured as a minimal, desktop-only personal CV:
+Homepage: Shows your full name and entry point to the information.
+Info Page: Includes detailed sections like About, Education, Experience, Skills, Portfolio, Contacts and Feedbacks.
+Editable Skills: The Skills section includes an Edit function, where you can add or remove skill items dynamically. All changes are saved locally via localStorage.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Features:
+-Clean and modern UI inspired by Figma design
+-Navigation between homepage and information page and edit page
+-Skills section with:
+      -Green progress bars
+      -Skill name display
+      -Edit button to add/remove skills
+      -State persistence using localStorage without a backend
+-Sidebar that can be collapsed to icons-only mode
+-Scroll-to-section navigation
+-Sticky sidebar with profile information.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Live Demo:
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.100.202:3001
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Built With:
+-Next.js
+-React Router
+-Vanilla CSS (global.css)
+-Google Fonts (Open Sans)
+-localStorage API for state persistence
+-Figma for pixel-perfect UI reference
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Project Structure:
+/app
+  /Info/Page.js                 → Main Info Page (with sections like Education, Skills, etc.)
+  /Skills/edit/page.js          → Editable Skills Page
+  /Layout.js                    → RootLayout
+  /page.js                      → Home Page
+/public/assets                  → Icons and images
+/styles                         → global.css, edit.css, info.css
+/units/skillStorage.js          → skillStorage.js (localStorage logic)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+How It Works:
+-When editing skills, new entries are saved in localStorage via helper functions in utils/skillStorage.js.
+-The InfoPage reads from localStorage to show updated skill bars.
+-All progress bars are rendered with dynamic widths and labels.
+-Sidebar collapse state is toggled via a button and styled accordingly with CSS transitions.
 
-## Deploy on Vercel
+Author
+Maka Saparashvili
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Mentor
+Ketevan Gagua
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
