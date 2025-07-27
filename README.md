@@ -24,6 +24,7 @@ Features:
 Live Demo:
    - Local:        http://localhost:3001
    - Network:      http://192.168.100.202:3001
+   - Vercel:       [https://vercel.com/makass-projects/final-react#:~:text=final%2Dreact%2Dkappa.vercel.app](https://final-react-kappa.vercel.app/)
 
 Built With:
 -Next.js
